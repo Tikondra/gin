@@ -1,0 +1,64 @@
+.advantage {
+	margin-top: -250px;	  
+  padding: 150px 0 0;
+	background-image: url('../img/cloud.png');
+	background-repeat: no-repeat;
+	background-position: 0 -125px;	
+}
+
+.advantage__list {
+	@include list;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 100px auto;
+}
+
+.advantage__item {
+	flex-basis: 570px;
+	min-height: 330px;
+	padding: 30px;
+	margin-bottom: 25px;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+
+	&--1 {
+		background-color: #F9F3DE;
+		background-image: url('../img/adv1.png');
+	}
+
+	&--2 {
+		background-color: #FFF2FB;
+		background-image: url('../img/adv2.png');
+	}
+
+	&--3 {
+		background-color: #FFF2FB;
+		background-image: url('../img/adv3.png');
+	}
+
+	&--4 {
+		background-color: #F9F3DE;
+		background-image: url('../img/adv4.png');
+	}
+}
+
+.advantage__item-title {
+	margin: 0;
+	color: #89316e;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 34.8px;
+
+	&--span {
+		font-weight: 700;
+	}
+}
+
+.advantage__item-text {
+	max-width: 250px;
+	color: #474747;	
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+}

@@ -1,0 +1,40 @@
+.banner {	
+	min-height: 632px;
+	padding: 170px 0 70px;
+	color: #89316e;
+	background-color: #f9f2dd;
+	background-image: url('../img/back-banner.png');
+	background-repeat: no-repeat;
+	background-position: 70%;
+}
+
+.banner__content {
+
+}
+
+.banner__title {
+	margin: 0;
+	max-width: 630px;
+	font-size: 48px;
+	font-weight: 900;
+}
+
+.banner__span {
+	margin: 0;
+	color: #fe6700;
+	font-weight: 500;
+}
+
+.banner__subtitle {
+	margin: 0;
+	font-size: 48px;
+	font-weight: 300;
+}
+
+.banner__text {
+	margin: 0;
+	color: #89316e;
+	font-size: 29px;
+	font-weight: 300;
+	line-height: 37.82px;
+}

@@ -1,0 +1,35 @@
+.navigation {
+	flex-grow: 1;
+}
+
+.navigation__list {
+	@include list;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navigation__link {
+	display: block;
+	padding: 38px 0 33px;
+	color: #89316e;
+	font-size: 18px;
+	font-weight: 400;
+	border-bottom: 5px solid transparent;
+
+	&--active {
+		border-bottom: 5px solid #fd7400;
+	}
+
+	&:hover {
+		border-bottom: 5px solid #fd7400;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.navigation__list {		
+		flex-direction: row;
+		padding: 0 40px;
+	}
+}
