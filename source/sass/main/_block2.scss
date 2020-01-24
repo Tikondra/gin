@@ -1,5 +1,5 @@
 .block2 {
-  padding: 150px 25px 0;
+  padding: 130px 25px 0;
   margin: -100px 0 0;
   background-image: url("../img/block2-back.webp");
 }
@@ -11,7 +11,7 @@
 .block2__content {
   position: relative;
   max-width: 940px;
-  padding: 40px 236px 40px 60px;
+  padding: 10px 236px 10px 60px;
   background-color: #ffffff;
 
   &::after {
@@ -37,6 +37,6 @@
 .block2__text {
   font-weight: 300;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 24px;
   color: #5D5D61;
 }

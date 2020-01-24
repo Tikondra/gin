@@ -1,12 +1,12 @@
-.banner {
+.banner--page2 {
   position: relative;
   padding: 25px;
-	min-height: 601px;
 	color: #89316e;
-	background-color: #f9f2dd;
+	background-color: #e4ebf4;
 	background-image: url('../img/banner-back.webp');
 	background-repeat: no-repeat;
 	background-position: center;
+  background-size: contain;
 
   &::after {
     content: "";
@@ -19,34 +19,35 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-}
 
-.banner__wrapper {
-  @include container;
-  padding: 100px 0;
-}
-
-.banner__title {
-	margin: 0;
-	font-size: 44px;
-	font-weight: 300;
-}
-
-.banner__text {
-	margin: 0;
-	color: #89316e;
-	font-size: 48px;
-	font-weight: 900;
-	line-height: 50px;
-
-  &--2 {
-    font-weight: 500;
-    color: #FE6700;
+  .banner__wrapper {
+    @include container;
+    padding: 100px 0;
   }
 
-  &--3 {
+  .banner__title {
+    margin: 0;
+    font-size: 44px;
     font-weight: 300;
-    font-size: 29px;
-    line-height: 30px;
+  }
+
+  .banner__text {
+    margin: 0;
+    color: #89316e;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 50px;
+
+    &--2 {
+      font-weight: 500;
+      color: #FE6700;
+    }
+
+    &--3 {
+      font-weight: 300;
+      font-size: 29px;
+      line-height: 30px;
+    }
   }
 }
+
