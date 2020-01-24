@@ -2,6 +2,7 @@
   padding: 130px 25px 0;
   margin: -100px 0 0;
   background-image: url("../img/block2-back.webp");
+  overflow: hidden;
 }
 
 .block2__wrapper {
@@ -19,7 +20,7 @@
     position: absolute;
     bottom: 0;
     right: -360px;
-    width: 705px;
+    width: 70%;
     height: 500px;
     background-image: url("../img/img1.webp");
     background-repeat: no-repeat;
