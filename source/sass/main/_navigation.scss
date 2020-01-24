@@ -1,0 +1,164 @@
+.navigation {
+  background-color: #89316E;
+
+  &--footer {
+    max-width: 635px;
+    margin: auto;
+  }
+}
+
+.navigation__btn {
+  display: block;
+  padding: 17.5px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+.navigation__list {
+	@include list;
+  max-width: 900px;
+  margin: auto;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+  &--footer {
+    display: flex;
+
+    a {
+      font-size: 16px;
+      min-height: 35px;
+    }
+  }
+}
+
+.navigation__item {
+	position: relative;
+
+  &--2 {
+    order: 1;
+  }
+}
+
+.navigation__link {
+	@include center-flex;
+	min-height: 50px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s ease;
+
+	&--active {
+		border-bottom: 3px solid #fd7400;
+	}
+
+	&:hover {
+		border-bottom: 3px solid #fd7400;
+
+	}
+}
+
+.navigation__link:hover ~ .submenu {
+	display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: 30px;
+  left: -11px;
+  padding: 0 15px;
+  border-top: 5px solid #fd7400;
+  border-bottom: 3px solid #fd7400;
+  background-color: #fff;
+  list-style: none;
+}
+
+.submenu__item {
+  margin: 10px 0;
+}
+
+.submenu__link {
+  color: #89316E;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.submenu:hover {
+	display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .navigation__btn {
+    display: none;
+  }
+
+	.navigation__list {
+    display: flex;
+		flex-direction: row;
+
+    &--footer {
+      max-width: none;
+      padding: 20px 0 0;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+	}
+
+	.navigation__link {
+		max-width: none;
+    border-bottom: 5px solid transparent;
+
+		&--active {
+			border-bottom: 5px solid #fd7400;
+		}
+
+		&:hover {
+			border-bottom: 5px solid #fd7400;
+		}
+
+    &--footer {
+      min-width: 150px;
+      justify-content: flex-start;
+      border: none;
+
+      &:hover {
+        border: none;
+      }
+    }
+	}
+
+  .navigation__link--footer:hover ~ .submenu {
+    display: flex;
+  }
+
+	.submenu {
+		top: 55px;
+		left: 0;
+		padding: 0;
+		border-top: none;
+		border-bottom: 5px solid #fd7400;
+		background-color: #fff;
+		list-style: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      width: 100%;
+      height: 30px;
+      background-color: transparent;
+    }
+	}
+}
+
+main {
+  min-height: 500px;
+}

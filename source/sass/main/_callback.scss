@@ -1,0 +1,76 @@
+.callback {
+  max-width: 900px;
+  margin: auto;
+  padding: 25px;
+  background-image: url("../img/img2.webp");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.callback__title {
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #89316E;
+  text-align: center;
+}
+
+.callback__form {
+  width: 421px;
+  margin-left: auto;
+  margin-bottom: 40px;
+  padding: 37px 61px;
+  background: #F9F2DD;
+}
+
+.callback__text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #89316E;
+}
+
+.callback__input {
+  width: 100%;
+  padding: 17px 15px 17px 40px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  border: none;
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.37);
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+  background-position: center left 10px;
+
+  &--tel {
+    background-image: url("../img/phone.svg");
+  }
+
+  &--text {
+    min-height: 136px;
+    background-position: top 20px left 10px;
+    background-image: url("../img/twit.svg");
+    resize: none;
+  }
+
+  &::placeholder {
+    color: #C8AE99;
+  }
+}
+
+.callback__btn {
+  width: 100%;
+  padding: 20px 30px;
+  font-family: 'Roboto', 'Tahoma', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: none;
+  background-image: linear-gradient(90deg, #FF5D00 0%, #FE8100 100%);
+}

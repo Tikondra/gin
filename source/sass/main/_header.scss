@@ -1,0 +1,44 @@
+.header__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px 15px 0 15px;
+}
+
+.header__logo {
+  min-width: 295px;
+}
+
+.header__btn {
+  align-self: center;
+  padding: 15px 30px;
+  margin: 15px 0;
+  min-width: 231px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #89316E;
+  background-color: #FAEFF6;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #fd7400;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .header__top {
+    @include container;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+  }
+}

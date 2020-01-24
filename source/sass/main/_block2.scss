@@ -1,0 +1,42 @@
+.block2 {
+  padding: 150px 25px 0;
+  margin: -100px 0 0;
+  background-image: url("../img/block2-back.webp");
+}
+
+.block2__wrapper {
+  @include container;
+}
+
+.block2__content {
+  position: relative;
+  max-width: 940px;
+  padding: 40px 236px 40px 60px;
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -360px;
+    width: 705px;
+    height: 500px;
+    background-image: url("../img/img1.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.block2__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #89316E;
+}
+
+.block2__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  color: #5D5D61;
+}
