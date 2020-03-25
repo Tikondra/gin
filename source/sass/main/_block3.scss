@@ -25,7 +25,6 @@
     position: relative;
     margin-bottom: 3.45%;
     padding: 10px 30px;
-    width: 31%;
     background-color: #ffffff;
     color: #474747;
 
@@ -50,7 +49,16 @@
 }
 
 .block3__item-text {
+  color: #89316e;
   font-size: 16px;
-  font-weight: 300px;
-  line-height: 18px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .block3__list {
+    li {
+      width: 31%;
+    }
+  }
 }

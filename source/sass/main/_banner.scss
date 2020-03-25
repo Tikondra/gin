@@ -3,10 +3,10 @@
   padding: 25px;
 	color: #89316e;
 	background-color: #e4ebf4;
-	background-image: url('../img/banner-back.webp');
+	background-image: url('../img/banner-back.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
-  background-size: contain;
+  background-size: cover;
 
   &::after {
     content: "";
@@ -15,7 +15,7 @@
     left: 0;
     height: 567px;
     width: 100%;
-    background-image: url("../img/cloud2.webp");
+    background-image: url("../img/cloud2.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -27,14 +27,14 @@
 
   .banner__title {
     margin: 0;
-    font-size: 44px;
+    font-size: 36px;
     font-weight: 300;
   }
 
   .banner__text {
     margin: 0;
     color: #89316e;
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 900;
     line-height: 50px;
 
@@ -45,9 +45,115 @@
 
     &--3 {
       font-weight: 300;
-      font-size: 29px;
-      line-height: 30px;
+      font-size: 22px;
+      line-height: 26px;
     }
   }
 }
 
+.banner--plastica {
+  position: relative;
+  color: #89316e;
+  background-color: #e4ebf4;
+  background-image: linear-gradient(249.97deg, #E4EBF5 -0.16%, #F9F3DE -0.16%, #FFEFE1 25.33%, #EDDDE1 48.95%, #FFE9EE 71.81%);
+
+  .banner__wrapper {
+    @include container;
+    padding: 130px 25px;
+    background-image: url("../img/plast-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .banner__title {
+    margin: 0;
+    color: #89316e;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 50px;
+
+    span {
+      color: #FD7400;
+    }
+  }
+
+  .banner__text {
+    margin: 0;
+    max-width: 430px;
+    font-size: 36px;
+    font-weight: 300;
+
+    &--2 {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+}
+
+.banner--uzi {
+  position: relative;
+  color: #89316e;
+  background-color: #e4ebf4;
+  background-image: linear-gradient(251.12deg, #E4EBF5 -0.16%, #EDDDE1 -0.16%, #f0e2e1 35.08%, #FFE9EE 71.81%);
+
+  .banner__wrapper {
+    @include container;
+    padding: 100px 25px 130px;
+    background-image: url("../img/usi-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+
+  .banner__title {
+    margin: 0;
+    color: #89316e;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 50px;
+
+    span {
+      color: #FD7400;
+    }
+  }
+
+  .banner__text {
+    margin: 0;
+    max-width: 430px;
+    font-size: 36px;
+    font-weight: 300;
+
+    &--2 {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner--plastica {
+    background-size: contain;
+    margin-bottom: 100px;
+
+    .banner__wrapper {
+      position: relative;
+      background-size: contain;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -80px;
+        left: 38%;
+        width: 220px;
+        height: 210px;
+        background-image: url("../img/flower.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 220px;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.block4 {
+  padding: 130px 15px 0;
+  background-image: linear-gradient(180deg, #FFE8EE 0%, #E7E6EF 100%);
+  overflow: hidden;
+}
+
+.block4__wrapper {
+  @include container;
+}
+
+.block4__content {
+  position: relative;
+  max-width: 670px;
+  padding: 15px;
+  margin-left: auto;
+  background-color: #ffffff91;
+}
+
+.block4__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #89316E;
+}
+
+.block4__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #5D5D61;
+}
+
+@media screen and (min-width: 768px) {
+  .block4 {
+    padding: 30px;
+    background-image: url("../img/back4.png"),linear-gradient(180deg, #FFE8EE 0%, #E7E6EF 100%);
+    background-repeat: no-repeat;
+    background-position: top left -250px, center;
+  }
+
+  .block4__content {
+    padding: 10px 60px 10px;
+    background-color: #ffffff;
+  }
+}

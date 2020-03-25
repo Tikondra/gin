@@ -1,9 +1,14 @@
 .block1 {
   position: relative;
   @include container;
+
+  &--plast {
+    padding-bottom: 50px;
+  }
 }
 
 .block1__title {
+  margin-bottom: 50px;
   font-size: 36px;
   font-weight: 900;
   line-height: 40px;
@@ -22,46 +27,95 @@
   justify-content: space-between;
 
   li {
-    width: 49%;
+    width: 100%;
     min-height: 300px;
     margin-bottom: 2%;
     padding: 30px;
     background-color: #EEEBE6;
-    background-image: url("../img/card1.webp");
+    background-image: url("../img/card1.png");
     background-position: bottom right;
     background-repeat: no-repeat;
 
     &:nth-child(2) {
       background-color: #F0F5FC;
-      background-image: url("../img/card2.webp");
+      background-image: url("../img/card2.png");
     }
 
     &:nth-child(3) {
       background-color: #FFF2FB;
-      background-image: url("../img/card3.webp");
+      background-image: url("../img/card3.png");
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     &:nth-child(4) {
       background-color: #F9F3DE;
-      background-image: url("../img/card4.webp");
+      background-image: url("../img/card4.jpg");
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &--plast {
+    li {
+      background-image: url("../img/card5.png");
+
+      &:nth-child(2) {
+        background-image: url("../img/card6.png");
+        background-size: contain;
+      }
+
+      &:nth-child(3) {
+        background-image: url("../img/card3.png");
+      }
+
+      &:nth-child(4) {
+        background-image: url("../img/card8.png");
+      }
+    }
+  }
+
+  &--uzi {
+    li {
+      background-image: url("../img/card-uzi1.png");
+      background-color: #FFF1E6;
+
+      &:nth-child(2) {
+        background-image: url("../img/card-uzi2.png");
+        background-size: contain;
+      }
+
+      &:nth-child(3) {
+        background-color: #FFF3E9;
+        background-image: url("../img/card-uzi3.png");
+      }
+
+      &:nth-child(4) {
+        background-color: #F6F7F9;
+        background-image: url("../img/card-uzi4.png");
+      }
     }
   }
 }
 
 .block1__card-title {
-  margin-bottom: 0;
   font-weight: 300;
   font-size: 30px;
-  line-height: 32px;
+  line-height: 34px;
   color: #89316E;
 }
 
 .block1__card-text {
   max-width: 245px;
   margin: 0;
+  color: #89316e;
   font-weight: 300;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .block1__list {
+    li {
+      width: 49%;
+    }
+  }
 }

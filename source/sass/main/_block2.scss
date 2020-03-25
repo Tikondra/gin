@@ -1,7 +1,7 @@
 .block2 {
-  padding: 130px 25px 0;
+  padding: 130px 15px 0;
   margin: -100px 0 0;
-  background-image: url("../img/block2-back.webp");
+  background-image: url("../img/block2-back.jpg");
   overflow: hidden;
 }
 
@@ -12,8 +12,8 @@
 .block2__content {
   position: relative;
   max-width: 940px;
-  padding: 10px 236px 10px 60px;
-  background-color: #ffffff;
+  padding: 15px;
+  background-color: #ffffff91;
 
   &::after {
     content: "";
@@ -22,7 +22,7 @@
     right: -360px;
     width: 70%;
     height: 500px;
-    background-image: url("../img/img1.webp");
+    background-image: url("../img/uzi-img.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -40,4 +40,15 @@
   font-size: 18px;
   line-height: 24px;
   color: #5D5D61;
+}
+
+@media screen and (min-width: 768px) {
+  .block2 {
+    padding: 130px 25px 0;
+  }
+
+  .block2__content {
+    padding: 10px 236px 10px 60px;
+    background-color: #ffffff;
+  }
 }
